@@ -20,7 +20,7 @@ def argument_parser():
     parser.add_argument('-o', '--output', dest='output', default=None, help='File to save open ports. (default: none)')
     parser.add_argument('--timeout', dest='timeout', default=None, help='Timeout in ms per port. (default: auto via ping)')
     parser.add_argument('--threads', dest='threads', default=30, help='Number of worker threads. (default: 30)')
-    parser.add_argument('-n', dest='numberPorts', required=True, help='Number of ports to be scanned')
+    parser.add_argument('-n', '--number', dest='numberPorts', required=True, help='Number of ports to be scanned')
     
     return parser.parse_args()
     
