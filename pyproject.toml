@@ -18,7 +18,7 @@ dependencies = [
 portscan = "portscanner.portscan:main"
 
 [tool.setuptools]
-packages = ["portscanner"]
+packages = ["portscanner", "portscanner.helpers", "portscanner.utils"]
 
 [tool.setuptools.package-data]
 portscanner = ["data/*.csv"]
