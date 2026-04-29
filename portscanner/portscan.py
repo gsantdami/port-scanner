@@ -6,10 +6,10 @@ import argparse
 import queue
 
 
-from utils.colors import Colors
-from utils.art import art
-from helpers.read_data import read_csv
-from helpers.get_timeout import get_timeout
+from portscanner.utils.colors import Colors
+from portscanner.utils.art import art
+from portscanner.helpers.read_data import read_csv
+from portscanner.helpers.get_timeout import get_timeout
     
     
 def argument_parser():

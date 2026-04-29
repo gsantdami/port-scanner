@@ -1,11 +1,11 @@
 import sys
-from utils.colors import Colors
+from portscanner.utils.colors import Colors
 from pythonping import ping
 
 def get_timeout(host):
     try:
         result = ping(target=host, count=1, timeout=5)
-        return float(result.rtt_avg_ms) + 330
+        return float(result.rtt_avg_ms) + 200
     except KeyboardInterrupt:
         print(f'\n{Colors.RED}[!]  Operation canceled by the user.{Colors.RESET}')
         sys.exit(0)
